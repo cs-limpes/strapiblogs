@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,77 @@
       "type": "string"
     },
     "Banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Content": {
       "type": "blocks"
+    },
+    "Content2": {
+      "type": "blocks"
+    },
+    "Content3Intro": {
+      "type": "blocks"
+    },
+    "Image1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Blog1": {
+      "type": "blocks"
+    },
+    "Blog1Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Blog2": {
+      "type": "blocks"
+    },
+    "Blog2Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Blog3": {
+      "type": "blocks"
+    },
+    "Blog3Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

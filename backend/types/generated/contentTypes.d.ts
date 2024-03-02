@@ -833,12 +833,78 @@ export interface ApiBlogPostBlogPost extends Schema.CollectionType {
   };
 }
 
+export interface ApiContactContact extends Schema.SingleType {
+  collectionName: 'contacts';
+  info: {
+    singularName: 'contact';
+    pluralName: 'contacts';
+    displayName: 'Contact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Banner: Attribute.Media;
+    Form: Attribute.Component<'forms.contact-form'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contact.contact',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contact.contact',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Schema.SingleType {
   collectionName: 'homes';
   info: {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'Home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Banner: Attribute.Media;
+    Content: Attribute.Blocks;
+    Content2: Attribute.Blocks;
+    Content3Intro: Attribute.Blocks;
+    Image1: Attribute.Media;
+    Blog1: Attribute.Blocks;
+    Blog1Image: Attribute.Media;
+    Blog2: Attribute.Blocks;
+    Blog2Image: Attribute.Media;
+    Blog3: Attribute.Blocks;
+    Blog3Image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPagePage extends Schema.CollectionType {
+  collectionName: 'pages';
+  info: {
+    singularName: 'page';
+    pluralName: 'pages';
+    displayName: 'Page';
   };
   options: {
     draftAndPublish: true;
@@ -850,9 +916,9 @@ export interface ApiHomeHome extends Schema.SingleType {
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
       Attribute.Private;
   };
 }
@@ -877,7 +943,9 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::author.author': ApiAuthorAuthor;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
+      'api::contact.contact': ApiContactContact;
       'api::home.home': ApiHomeHome;
+      'api::page.page': ApiPagePage;
     }
   }
 }
