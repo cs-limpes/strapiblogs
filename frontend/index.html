@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlene Slimp | Software Engineer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body class="main">
+      <div id="header"></div>
+      <div class="vertical-line"></div>
+      <section class="hero">
+            <img src="images/Head.png" alt="">
+            <div class="headings">
+                  <h1>Charlene Slimp</h1>
+                  <h2>Software Engineer</h2>
+                  <p>Two decades of experience in software engineering, architecture, and application development</p>
+            </div>
+            
+      </section>
+      <section class="intro">
+      <div class="left1">
+            <p class="left1p1">I began my journey building computers, setting up networks, and writing desktop applications.</p>
+            <p class="left1p2">Then I fell in love with the internet, teaching myself HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="right1">
+            <p class="right1p1">Since then, I've had a beautiful website development career, focused on building websites and applications for small businesses, independent artists, and non-profit organizations and began work as a consultant, advising on architecture, building engineering teams, and product development.</p>
+      </section>
+      <section class="aboutbrief">
+            <h2>About Me</h2>
+            <p>I truly believe that technology is a tool that can make lives better, easier, and more productive - taking humanity to places we only ever dreamed of and I'm extremely excited and proud of my contributions to that development. That workers and employees often feel new software makes processes take longer and require more work is a terrible error in software design that could easily be rectified but it's so easily overlooked by most consultants.</p>
+            <h2>Three things I stand behind:</h2>
+            <div class="threethings">
+                  <p class="onething">I'm passionate about user experience and believe strongly in listening to the people using your product - external and internal. They know best how a product is being used rather than how it was intended to be used and it's essential to listen to their feedback and requests.</p>
+                  <p class="twothing">A truly intuitive user interface has yet to be developed - we have all been taught to use websites and applications and because they all use similar interfaces, they "feel" intuitive - but they aren't.</p>
+                  <p class="threething">Accessibility is essential and the curb cut effect is real. If you ignore disabled and otherwise impaired users, your product will suffer and you will be left behind - this user group needs to be top of your list instead of an after thought.</p>
+            </div>
+      </section>
+      <section class="blogpreview">
+            <h2>Blog</h2>
+            <!-- this is where we'll put some blog previews when I figure that out -->
+      </section>
+      
+
+
+      <div id="footer"></div>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Fetch and include the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+
+    // Fetch and include the footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading the footer:', error));
+});
+
+</script>
+</body>
+</html>
+

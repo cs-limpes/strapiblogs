@@ -1,0 +1,29 @@
+/* Box Model thing */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix thing */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* start main CSS */
+a {
+      color: #7AA874;
+      text-decoration: none;
+}
+
+a:visited, a:active {
+      color: #D864A9;
+      text-decoration: none;
+}
