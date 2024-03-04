@@ -22,10 +22,7 @@ Green: #7AA874
 Pink: #D864A9*/
 
 /* start main CSS */
-header {
-      width: 100%;
-      background-color:  yellow;
-}
+
 
 nav {
     width: 100%;
@@ -50,4 +47,11 @@ nav ul li {
 
 #header{
       width: 100%;
+}
+
+.uc {
+      background-color: yellow;
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
 }

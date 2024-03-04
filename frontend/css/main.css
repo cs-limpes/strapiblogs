@@ -59,13 +59,15 @@ hr {
       width: 100%;
 }
 
+/* home page */
+
 .vertical-line {
       position: absolute; 
       top: 0; 
       left: 30%; 
       width: 5rem; 
       height: 70%; 
-      background-color: rgba(45, 138, 124, .5);  */
+      background-color: rgba(45, 138, 124, .5); 
       z-index: 10; 
   }
 
@@ -101,4 +103,96 @@ hr {
 
 #header object {
       width: 100%;
+}
+
+.threethings {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 2rem;
+      justify-content: center;
+}
+
+.thing {
+      vertical-align: middle;
+      justify-content: center;
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 30%;
+      background-color: rgba(45, 138, 124, .1);
+}
+
+.thing:hover {
+      position: relative;
+      bottom: .5rem;
+      box-shadow: 3px 3px var(--tertiary-color);
+}
+
+/* about page */
+
+.summary {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center;
+}
+
+.abouttext {
+      padding: 0 1rem;
+}
+
+.abouttext h2, .moreabout h2{
+      color: var(--primary-color);
+}
+
+
+.worktop {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem auto;
+}
+
+.worktopright {
+      width: 50%;
+      padding: 0 1rem;
+      text-align: left;
+}
+
+.moreabout {
+      width: 100%;
+}
+
+/* work with me page */
+
+.worktop {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem auto;
+}
+
+.worktopright {
+      width: 50%;
+      padding: 0 1rem;
+      text-align: left;
+}
+
+.worktopright h1, h2 {
+      margin: 0;
+}
+
+.worktopleft {
+      width: 50%;
+}
+
+.workimg {
+      border-radius: 34%;
+      width: 100%;
+}
+
+.contact form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 50%;
 }
