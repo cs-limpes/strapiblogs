@@ -23,6 +23,12 @@ Pink: #D864A9*/
 
 /* start main CSS */
 
+:root {
+      --primary-color: #7AA874;
+      --secondary-color: #D864A9;
+      /* --tertiary-color: #3C435C; */
+      --tertiary-color: #2D8A7C;
+    }
 
 nav {
     width: 100%;
@@ -49,9 +55,16 @@ nav ul li {
       width: 100%;
 }
 
-.uc {
-      background-color: yellow;
-      color: black;
-      text-transform: uppercase;
-      text-align: center;
+nav ul li a {
+      color: var(--tertiary-color);
+      text-decoration: none;
+}
+
+nav ul li a:visited, nav ul li a:active {
+      color: var(--secondary-color);
+      text-decoration: none;
+}
+
+nav ul li a:hover {
+      color: var(--tertiary-color);
 }

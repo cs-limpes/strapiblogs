@@ -30,13 +30,14 @@
 .main {
       font-size: 16px;
       color: #fff;
+      font-family: "Madimi One", sans-serif;
       background-color: #191917;
       width: 60%;
       margin: 0 auto;
 }
 
 a {
-      color: var(--primary-color);
+      color: var(--tertiary-color);
       text-decoration: none;
 }
 
@@ -45,8 +46,22 @@ a:visited, a:active {
       text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+}
+
 h1 {
       color: var(--primary-color);
+
+} 
+
+h2, h3, h4, h5, h6 {
+      color: var(--secondary-color);
+}
+
+h1 {
       font-size: 2.5rem;
 }
 
@@ -66,28 +81,60 @@ hr {
       top: 0; 
       left: 30%; 
       width: 5rem; 
-      height: 70%; 
+      height: 576px; 
       background-color: rgba(45, 138, 124, .5); 
       z-index: 10; 
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
       .vertical-line {
           display: none;
+      }
+  }
+
+  @media screen and (min-width: 781px) and (max-width: 1024px){
+      .vertical-line {
+          height: 432px;
       }
   }
 
 .hero {
       display: flex;
       flex-direction: row;
-      margin: 0 auto;
+      margin: -4.75rem auto 0 auto;
       text-align: center;
       justify-content: center;
 }
 
-.hero img {
-      width: 55%;
-      height: auto;
+@media screen and (max-width: 780px) {
+      .hero {
+            margin: 0 auto;
+      }
+      .hero img {
+            width: 55%;
+            height: auto;
+        }
+        .main {
+            width: 100%;
+            padding: 0 2rem;
+        }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1024px){
+      .hero {
+            margin: -3.6rem auto 0 auto;
+      }
+      .hero img {
+            width: auto;
+            height: 27.5rem;
+        }
+}
+
+@media screen and (min-width: 1025px) {
+      .hero img {
+            width: auto;
+            height: 37.5rem;
+        }
 }
 
 .headings {
@@ -101,8 +148,13 @@ hr {
       margin: 0;
 }
 
+#header {
+      z-index: 99;
+      position: relative;
+}
 #header object {
       width: 100%;
+
 }
 
 .threethings {
@@ -129,6 +181,15 @@ hr {
       box-shadow: 3px 3px var(--tertiary-color);
 }
 
+@media screen and (max-width: 1024px) {
+      .threethings {
+            flex-direction: column;
+      }
+      .thing {
+            width: 80%;
+      }
+}
+
 /* about page */
 
 .summary {
@@ -147,17 +208,6 @@ hr {
 }
 
 
-.worktop {
-      display: flex;
-      flex-direction: row;
-      margin: 2rem auto;
-}
-
-.worktopright {
-      width: 50%;
-      padding: 0 1rem;
-      text-align: left;
-}
 
 .moreabout {
       width: 100%;
@@ -167,13 +217,12 @@ hr {
 
 .worktop {
       display: flex;
-      flex-direction: row;
-      margin: 2rem auto;
+      flex-direction: column-reverse;
+
 }
 
 .worktopright {
-      width: 50%;
-      padding: 0 1rem;
+      width: 100%;
       text-align: left;
 }
 
@@ -182,12 +231,18 @@ hr {
 }
 
 .worktopleft {
-      width: 50%;
+      width: 100%;
+      height: 3rem;
+      object-fit: cover;
 }
 
 .workimg {
-      border-radius: 34%;
-      width: 100%;
+      margin-left: -10%;
+      width: 120%;
+      height: 1rem;
+      object-fit: cover;
+      opacity: 1;
+      border-radius: 5px;
 }
 
 .contact form {
@@ -196,3 +251,17 @@ hr {
       margin: 0 auto;
       width: 50%;
 }
+
+/* contact page */
+
+.socials {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+}
+
+.socials i {
+      padding: 0 .5rem;
+}
+
