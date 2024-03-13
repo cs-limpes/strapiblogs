@@ -23,6 +23,7 @@
       --secondary-color: #D864A9;
       /* --tertiary-color: #3C435C; */
       --tertiary-color: #2D8A7C;
+      --quaternary-color: #191917;
     }
 
 
@@ -31,8 +32,8 @@
       font-size: 16px;
       color: #fff;
       font-family: "Madimi One", sans-serif;
-      background-color: #191917;
-      width: 60%;
+      background-color: var(--quaternary-color);
+      width: 100%;
       margin: 0 auto;
 }
 
@@ -154,13 +155,19 @@ hr {
 }
 #header object {
       width: 100%;
-
 }
+
+
+
+section {
+      margin: 0 2rem;
+}
+
 
 .threethings {
       display: flex;
       flex-direction: row;
-      margin: 1rem 2rem;
+      margin: 1rem 1rem;
       justify-content: center;
 }
 
@@ -181,7 +188,7 @@ hr {
       box-shadow: 3px 3px var(--tertiary-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
       .threethings {
             flex-direction: column;
       }
@@ -197,17 +204,27 @@ hr {
       flex-direction: row;
       margin: 0 auto;
       justify-content: center;
+      width: 100%;
 }
 
 .abouttext {
-      padding: 0 1rem;
+      padding-left: 1rem;
+      width: 50%;
+}
+
+.aboutimg {
+      width: 40%;
+      background-color: black;
+}
+
+.aboutimg img {
+      width: 100%;
+      height: auto;
 }
 
 .abouttext h2, .moreabout h2{
       color: var(--primary-color);
 }
-
-
 
 .moreabout {
       width: 100%;
@@ -218,7 +235,6 @@ hr {
 .worktop {
       display: flex;
       flex-direction: column-reverse;
-
 }
 
 .worktopright {
@@ -228,6 +244,40 @@ hr {
 
 .worktopright h1, h2 {
       margin: 0;
+}
+
+.areas h3 {
+      color: var(--primary-color);
+      font-family: "Madimi One", sans-serif;
+}
+
+li b {
+      color: var(--secondary-color);
+      font-weight: 100;
+}
+
+.resbutton{
+      color: var(--tertiary-color);
+      text-transform: uppercase;
+      font-family: "Madimi One", sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+}
+
+.resbutton a {
+      color: var(--secondary-color);
+      text-decoration: none;
+}
+
+.resbutton:hover {
+      margin-top: -5px;
+      margin-left: -5px;
+      padding-bottom: 5px;
+      color: var(--secondary-color);
+}
+
+.resbutton:hover a {
+      color: var(--tertiary-color);
 }
 
 .worktopleft {
@@ -243,6 +293,10 @@ hr {
       object-fit: cover;
       opacity: 1;
       border-radius: 5px;
+}
+
+.contact {
+      margin-top: 3rem;
 }
 
 .contact form {

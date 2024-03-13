@@ -34,3 +34,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+footer p {
+	margin: 0 2rem;
+}

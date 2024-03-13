@@ -17,10 +17,6 @@
    clear: both;
 }
 
-/* Colors: 
-Green: #7AA874
-Pink: #D864A9*/
-
 /* start main CSS */
 
 :root {
@@ -28,7 +24,7 @@ Pink: #D864A9*/
       --secondary-color: #D864A9;
       /* --tertiary-color: #3C435C; */
       --tertiary-color: #2D8A7C;
-    }
+}
 
 nav {
     width: 100%;
