@@ -33,8 +33,9 @@
       color: #fff;
       font-family: "Madimi One", sans-serif;
       background-color: var(--quaternary-color);
-      width: 100%;
+      width: 80%;
       margin: 0 auto;
+      padding: 0 2rem;
 }
 
 a {
@@ -159,15 +160,11 @@ hr {
 
 
 
-section {
-      margin: 0 2rem;
-}
-
 
 .threethings {
       display: flex;
       flex-direction: row;
-      margin: 1rem 1rem;
+      margin: 1rem 0;
       justify-content: center;
 }
 
@@ -209,11 +206,63 @@ section {
 
 .abouttext {
       padding-left: 1rem;
-      width: 50%;
+      height: auto;
+      vertical-align: middle;
+      margin: auto 0;
+}
+
+.aboutimg{
+      border-bottom: var(--tertiary-color) 3px solid;
+      border-right: var(--tertiary-color) 3px double;
+}
+
+@media screen and (min-width: 1641px) {
+      .abouttext {
+            width: 30%;
+      }
+
+      .aboutimg {
+            width: 20%;
+      }
+}
+
+
+@media screen and (max-width: 1640px) {
+      .abouttext {
+            width: 60%;
+      }
+
+      .aboutimg {
+            width: 20%;
+      }
+}
+
+@media screen and (max-width: 1225px) {
+      .abouttext {
+            width: 80%;
+      }
+
+      .aboutimg {
+            width: 20%;
+      }
+}
+
+@media screen and (max-width: 1120px) {
+      .summary {
+            flex-flow:column-reverse
+      }
+
+      .abouttext {
+            width: 100%;
+      }
+
+      .aboutimg {
+            margin: 0 auto;
+            width: 50%;
+      }
 }
 
 .aboutimg {
-      width: 40%;
       background-color: black;
 }
 
@@ -235,6 +284,8 @@ section {
 .worktop {
       display: flex;
       flex-direction: column-reverse;
+
+      margin: 0 auto;
 }
 
 .worktopright {
@@ -244,6 +295,24 @@ section {
 
 .worktopright h1, h2 {
       margin: 0;
+}
+
+
+.workintro {
+
+      margin: 0 auto;
+}
+.workintro img {
+      float: right;
+      width: 20rem;
+      margin: 2rem;
+      border-bottom: var(--secondary-color) 3px solid;
+      border-right: var(--secondary-color) 3px double;
+}
+
+.areas {
+
+      margin: 0 auto;
 }
 
 .areas h3 {
@@ -297,6 +366,8 @@ li b {
 
 .contact {
       margin-top: 3rem;
+      width: 80%;
+      margin: 0 auto;
 }
 
 .contact form {
